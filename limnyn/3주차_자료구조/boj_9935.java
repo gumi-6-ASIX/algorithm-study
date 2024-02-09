@@ -27,7 +27,7 @@ public class boj_9935 {
                 // 뒤의 폭탄길이만큼의 문장을 boomCheck에 넣고
                 boomCheck = stackBoomCheck.substring(stackBoomCheck.length()-boom.length()).toString();
                 
-                //뒷 n자리 수가 폭탄과 같다면 (n : boom.length())
+                //뒷 n자리 글자 boomCheck가 폭탄과 같다면 (n : boom.length())
                 if(boomCheck.equals(boom)){
                     // stringbuilder의 뒷n자리 글자를 삭제하는 방식
                     stackBoomCheck.delete(stackBoomCheck.length()-boom.length(), stackBoomCheck.length());
