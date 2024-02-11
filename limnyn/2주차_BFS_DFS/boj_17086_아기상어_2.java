@@ -8,7 +8,7 @@ import java.util.Scanner;
 // 아기상어
 // 파이썬으로 푼 코드를 자바로 다시 푼거
 // snake_case 코드를 camelCase로 안바꿔버렸다.
-public class boj_17086 {
+public class boj_17086_아기상어_2 {
     public static void main(String[] args)throws IOException{
         System.out.println(boj_17086.solution());
     }
