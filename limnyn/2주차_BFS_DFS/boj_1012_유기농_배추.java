@@ -5,7 +5,7 @@ import java.util.Queue;
 import java.util.Scanner;
 
 // https://www.acmicpc.net/problem/1012
-public class boj_1012 {
+public class boj_1012_유기농_배추 {
     public static void main(String[] args) {
         int testCase = sc.nextInt();    
         for(int i = 0; i < testCase; i++){
