@@ -28,11 +28,11 @@ public class boj_1932_정수_삼각형 {
             for (int i = 0; i < r; i++)
                 line[i] = Integer.parseInt(st.nextToken());
             
+            //첫 줄일 때
             if (n == 1){
                 result = line[0];
                 break;
             }
-
             if (r == 1){
                 dp_before = line;
                 continue;
@@ -40,21 +40,16 @@ public class boj_1932_정수_삼각형 {
             
             int[] dp_now = new int[r];
             for (int c = 0; c < r; c++){
-
                 if (c == 0)
                     dp_now[0] = line[0] + dp_before[0];
-                
                 else if (c == r-1)
                     dp_now[c] = line[c] + dp_before[c-1];
-
                 else
                     dp_now[c] = line[c] + Math.max(dp_before[c-1], dp_before[c]);
-
                 //최대값 출력을 위해 마지막 줄에서 max 값 찾기
                 if (r == n){
                     result = Math.max(result, dp_now[c]);
                 }
-
             }
             // 현재 줄이 이전 줄로 가서 dp 계산에 쓰인다.
             dp_before = dp_now;
