@@ -1,4 +1,4 @@
-package com.codingtest.boj;
+package com.codingtest.알고리즘_스터디.week3_자료구조;
 
 import java.util.Scanner;
 
@@ -7,7 +7,7 @@ import java.util.Scanner;
  * 스택 쓰니까 메모리 초과나서 그냥 이렇게 stringbuilder로 풀어봄
  * 
  */
-public class boj_9935 {
+public class boj_9935_문자열_폭발 {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         String line = sc.next();

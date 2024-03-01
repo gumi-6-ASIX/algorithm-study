@@ -1,4 +1,4 @@
-package com.codingtest.boj;
+package com.codingtest.알고리즘_스터디.week3_자료구조;
 
 
 import java.util.ArrayList;
@@ -15,7 +15,7 @@ import java.util.Scanner;
  * k번째를 출력한다.
  * 
  */
-public class boj_11866 {
+public class boj_11866_요세푸스_문제_0 {
     static Scanner sc = new Scanner(System.in);
     static int n, k;
     

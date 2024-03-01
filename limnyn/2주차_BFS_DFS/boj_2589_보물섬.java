@@ -1,4 +1,4 @@
-package com.codingtest.boj;
+package com.codingtest.알고리즘_스터디.week2_BFS_DFS;
 
 import java.util.LinkedList;
 import java.util.Queue;

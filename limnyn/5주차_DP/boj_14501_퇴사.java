@@ -1,4 +1,4 @@
-package com.codingtest.boj;
+package com.codingtest.알고리즘_스터디.week5_DP;
 
 import java.io.BufferedReader;
 import java.io.IOException;

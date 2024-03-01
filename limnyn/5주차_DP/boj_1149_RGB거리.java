@@ -1,4 +1,4 @@
-package com.codingtest.boj;
+package com.codingtest.알고리즘_스터디.week5_DP;
 //14576KB	136ms
 import java.io.BufferedReader;
 import java.io.IOException;

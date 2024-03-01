@@ -1,4 +1,4 @@
-package com.codingtest.boj;
+package com.codingtest.알고리즘_스터디.week4_그리디;
 
 import java.util.Scanner;
 

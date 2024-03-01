@@ -1,4 +1,4 @@
-package com.codingtest.boj;
+package com.codingtest.알고리즘_스터디.week2_BFS_DFS;
 
 import java.io.*;
 import java.util.LinkedList;
@@ -10,7 +10,7 @@ import java.util.Scanner;
 // snake_case 코드를 camelCase로 안바꿔버렸다.
 public class boj_17086_아기상어_2 {
     public static void main(String[] args)throws IOException{
-        System.out.println(boj_17086.solution());
+        System.out.println(boj_17086_아기상어_2.solution());
     }
     static Scanner sc = new Scanner(System.in);
     static int n;
