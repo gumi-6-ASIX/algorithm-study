@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 public class BOJ16234_인구이동 {
@@ -10,7 +11,8 @@ public class BOJ16234_인구이동 {
     static int hap; // 연합국의 총 인구수
     static int cnt; // 연합국 개수
     static boolean move; // 인구 이동 발생하는가
-    static int answer;
+    static int answer; // 정답
+    static ArrayList<int[]> select; // 갱신해 줘야 하는 곳 위치 배열
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -33,12 +35,14 @@ public class BOJ16234_인구이동 {
         cnt = 1; // 연합국 개수 초기화
         move = false;
         answer = 0;
+        select = new ArrayList<>();
 
         while (true) {
             for (int i = 0; i < N; i++) {
                 for (int j = 0; j < N; j++) {
                     if (!enable[i][j]) {
                         hap = country[i][j]; // 연합국 인구수 초기화 (시작 지점으로)
+                        select.add(new int[] { i, j });
 
                         dfs(i, j);
 
@@ -46,26 +50,31 @@ public class BOJ16234_인구이동 {
                         if (cnt > 1) {
                             // 국경선 열린 거 다 돌았으면 연합국 평균으로 바꿔주기
                             int avg = hap / cnt; // (연합 인구수) / (연합 이루는 칸의 개수)
-                            for (int k = 0; k < N; k++) {
-                                for (int l = 0; l < N; l++) {
-                                    // 연합국이 있으면 평균값으로 갱신해 주기
-                                    if (enable[k][l]) {
-                                        country[k][l] = avg;
-                                    }
-                                }
+
+                            for (int[] where : select) {
+                                country[where[0]][where[1]] = avg;
                             }
-                            enable = new boolean[N][N]; // 국경선 닫기
-                            cnt = 1; // 연합국 개수 초기화
-                            move = true; // 인구이동 발생
+
+                            move = true; // 인구 이동 발생
+
+                            // 초기화
+                            cnt = 1;
+                            select = new ArrayList<>();
+                        } else {
+                            enable[i][j] = false;
+                            select = new ArrayList<>();
                         }
                     }
                 }
             }
-            // 인구 이동 발생했으면
+
+            // 인구 이동 발생
             if (move) {
-                answer++; // 결과 + 1
-                move = false; // 초기화
-            } else { // 발생 끝났으면 break
+                answer++;
+                move = false;
+                enable = new boolean[N][N];
+                select = new ArrayList<>();
+            } else {
                 break;
             }
         }
@@ -78,6 +87,7 @@ public class BOJ16234_인구이동 {
         int[] dy = new int[] { 0, 0, -1, 1 };
 
         enable[x][y] = true; // 국경선 열기
+        select.add(new int[] { x, y });
 
         // 상하좌우 확인
         for (int i = 0; i < 4; i++) {
