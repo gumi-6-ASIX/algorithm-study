@@ -27,26 +27,25 @@ node갯수 n = 10일 때 부분집합의 갯수 : 2^10
 "연결"에 대한 구현
     BFS | DFS 를 통해 노드 A[0] 대해 탐색을 하고, 
     탐색을 마쳤을 때 조합에 대해 미방문 한 노드가 존재하면 연결이 되지 않은 것이다
-
 */
 public class boj_17471_게리맨더링 {
-
-    /**
-     
-     * 
-     * 
-     * @param graphComb
-     * 예시 -> (0, 3, 4) -> 구획을 (0,3,4) 와 나머지 노드들로 나눈다고 가정
-     * @return
-     * 각 조합에 대해 (한 선거구에 대해)
-     * if 연결이 되어 있으면  return 인구수 총합,
-     * else if 연결이 되어 있지 않으면 return -1
-     */
     static ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();
     static int[] costs;
     static int[] subset;
     static int result = Integer.MAX_VALUE; 
     static int max_cnt;
+
+    /**
+     
+        * 
+        * 
+        * @param graphComb
+        * 예시 -> (0, 3, 4) -> 구획을 (0,3,4) 와 나머지 노드들로 나눈다고 가정
+        * @return
+        * 각 조합에 대해 (한 선거구에 대해)
+        * if 연결이 되어 있으면  return 인구수 총합,
+        * else if 연결이 되어 있지 않으면 return -1
+    */
     static int isConnected(List<Integer> graphComb) {
         Queue<Integer> q = new LinkedList<>();
         int[] visited = new int[graph.size()];
