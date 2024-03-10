@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/1주차" isTestSource="false" packagePrefix="backtracking" />
+      <sourceFolder url="file://$MODULE_DIR$/2주차" isTestSource="false" packagePrefix="dfs_bfs" />
+      <sourceFolder url="file://$MODULE_DIR$/3주차" isTestSource="false" packagePrefix="datastructure" />
+      <sourceFolder url="file://$MODULE_DIR$/4주차_그리디" isTestSource="false" packagePrefix="greedy" />
+      <sourceFolder url="file://$MODULE_DIR$/5주차_dp" isTestSource="false" packagePrefix="dynamicprogramming" />
+      <sourceFolder url="file://$MODULE_DIR$/6주차_A형대비" isTestSource="false" packagePrefix="backtracking" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
