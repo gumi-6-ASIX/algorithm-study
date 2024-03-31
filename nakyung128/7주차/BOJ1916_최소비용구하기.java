@@ -5,27 +5,27 @@ import java.util.ArrayList;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-class Node implements Comparable<Node> {
-    int idx;
-    int cost;
-
-    public Node(int idx, int cost) {
-        this.idx = idx;
-        this.cost = cost;
-    }
-
-    @Override
-    public int compareTo(Node n) {
-        return Integer.compare(this.cost, n.cost);
-    }
-
-    @Override
-    public String toString() {
-        return "[ " + this.idx + ", " + this.cost + " ]";
-    }
-}
-
 public class BOJ1916_최소비용구하기 {
+    static class Node implements Comparable<Node> {
+        int idx;
+        int cost;
+
+        public Node(int idx, int cost) {
+            this.idx = idx;
+            this.cost = cost;
+        }
+
+        @Override
+        public int compareTo(Node n) {
+            return Integer.compare(this.cost, n.cost);
+        }
+
+        @Override
+        public String toString() {
+            return "[ " + this.idx + ", " + this.cost + " ]";
+        }
+    }
+
     static boolean[] visited;
     static int[] costs;
     static ArrayList<Node>[] nodes;
