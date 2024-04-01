@@ -5,7 +5,7 @@ import java.util.*;
 import java.util.LinkedList;
 import java.util.StringTokenizer;
 
-public class Main {
+public class 톱니바퀴 {
     static int[][] num = new int[4][8];
     static int[] dx = { 1, -1 };
     static int[] hap = { 1, 2, 4, 8 };

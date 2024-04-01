@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class Main {
+public class 드래곤혐브 {
   static int[][] num = new int[101][101];
   static ArrayList<Integer> list;
   static int[] dx = { 1, 0, -1, 0 };

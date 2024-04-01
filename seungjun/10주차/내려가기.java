@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main {
+public class 내려가기 {
   static int[][] num;
   static int[][] dpmax;
   static int[][] dpmin;
