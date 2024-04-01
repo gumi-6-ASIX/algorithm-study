@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class 다리만들기2 {
     static class Node {
         int x;
         int y;
@@ -124,7 +124,7 @@ public class Main {
     }
 
     public static void dfs(int sum, int dep) {
-        if(sum>=miin){
+        if (sum >= miin) {
             return;
         }
         if (dep == cnt - 2) {

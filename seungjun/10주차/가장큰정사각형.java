@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class Main {
+public class 가장큰정사각형 {
 
   static int n, m, val, flag, miin = Integer.MAX_VALUE, maax = Integer.MIN_VALUE;
   static int[][] num, dp;
