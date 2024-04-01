@@ -36,7 +36,7 @@ public class 다리만들기2 {
     static ArrayList<Dari> node = new ArrayList<>();
     static Queue<int[]> queue = new LinkedList<>();
     static Queue<Integer> lanq = new LinkedList<>();
-    static LinkedHashSet<int[]> set = new LinkedHashSet();
+    static LinkedHashSet<int[]> set = new LinkedHashSet<>();
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

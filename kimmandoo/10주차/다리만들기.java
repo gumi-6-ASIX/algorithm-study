@@ -111,6 +111,7 @@ public class 다리만들기 {
     // 조합
     public static void comb(int start, int pathNum, int r) {
         if (r == 0) {
+            @SuppressWarnings("unchecked")
             List<Integer>[] a = new ArrayList[islandNum + 2];
             boolean[] visited = new boolean[islandNum + 2];
 
