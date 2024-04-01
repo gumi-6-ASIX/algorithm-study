@@ -12,7 +12,7 @@ class 드래곤커브 {
     public static void dragonCurve() {
         map[ci][cj] = 1; // 시작위치에 표시
         // 커브가 겹칠 수도 있으니까 visited는 필요없다..
-        List<Integer> dragon = new ArrayList();
+        List<Integer> dragon = new ArrayList<>();
         dragon.add(d); // 시작하는 곳 추가
         for (int i = 0; i < g; i++) {
             int len = dragon.size();
