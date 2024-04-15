@@ -39,8 +39,7 @@ def djikstar():
     group = [False] * n
     cost = [INF]*n
     heap = []
-    
-    group_count = 0
+
     for room in interview_rooms:
         cost[room] = 0
         heapq.heappush(heap, (0,room))
@@ -73,6 +72,8 @@ def djikstar():
             interview_num = i + 1
     print(interview_num)
     print(maxdist)
+                
+                
                 
 if __name__ == "__main__":
     n, m, k = map(int, input().split())
