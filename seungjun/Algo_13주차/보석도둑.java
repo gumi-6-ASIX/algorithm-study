@@ -41,7 +41,7 @@ public class 보석도둑 {
     static PriorityQueue<Node> pq = new PriorityQueue<>();
     static PriorityQueue<Bosuk> pq2 = new PriorityQueue<>();
     static ArrayList<Integer> list = new ArrayList<>();
-    static int n, k;
+    static int k, n;
     static long result = 0;
 
     public static void main(String[] args) throws IOException {
