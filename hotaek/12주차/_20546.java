@@ -1,4 +1,4 @@
-package 백준.java.실버;
+                                                                                                                                                            package 백준.java.실버;
 
 import java.io.BufferedReader;
 import java.io.IOException;
